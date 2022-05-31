@@ -5,35 +5,39 @@
     box-sizing: border-box;
 }
 
+
+
+/* body */
+
+body {
+    font-family: Whitney, 'Helvetica Neue', Helvetica,  sans-serif, Arial;
+}
+
 /* header top */
 
 .header-top{
     display: flex;
-    height: 50px;
     justify-content: center;
-    align-items: center;
+    background-color: #265EE9;
 }
 
 .container-header {
-    width: 60%;
+    width: 80%;
     display: flex;
-}
-
-.logo {
-    text-align: left;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .login  {
-    text-align: right;
-}
-
-.logo, .login {
-    padding: 8px;
-    width: 20%;
+    display: flex;
+    align-items: center ;
+    justify-content: flex-end;
 }
 
 .navbar {
     width: 60%;
+    display: flex;
+    justify-content: center;
 }
 
 .navbar ul {
@@ -43,73 +47,144 @@
 
 .navbar ul li{
     list-style: none;
-    padding: 8px;
+    padding: 10px 20px;
+    color: #fff;
 }
 
+button {
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+}
 /* header bottom */
 
 .header-bottom {
     display: flex;
-    height: 400px;
+    height: 500px;
     align-items: center;
     justify-content: center;
+    background-image: url(/img/jumbo.png);
+    background-size: cover;
 }
 
 .header-content {
     width: 50%;
-    height: 300px;
+    color: white;
+    text-align: center;
 }
+
+.header-content h1 {
+    margin-bottom: 25px;
+    font-size: 50px;
+}
+
+.header-content p {
+    margin-bottom: 15px;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.pulsante-download {
+    background-color: #fff;
+}
+
+.pulsante-open {
+    background-color: #23272A;
+    color: #fff;
+}
+
+.pulsante-download, .pulsante-open {
+    font-size: 18px;
+    padding: 14px 20px;
+    margin: 5px;
+}
+
 
 /* Main */
 .main-section {
-    height: 600px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 150px 0;
 }
 
 .container-main {
-    width: 60%;
     display: flex;
+    width: 80%;
+    justify-content: space-between;
 }
 
-.main-img {
-    width: 60%;
-    height: 400px;
+.main-text h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
 }
 
-.main-text {
-    width: 40%;
-    height: 400px;
+.main-text p {
+    font-size: 18px;
+    text-align: left;
+    line-height: 25px;
 }
 
 .main-big-section {
-    height: 800px;
     padding: 100px;
 }
 
 .big-content {
-    height: 600px;
-    width: 60%;
+    width: 80%;
     margin: auto;
+    text-align: center;
 }
+
+.big-content h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.big-content p{
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
+.big-content img{
+    width: 110%;
+}
+
+.star-text {
+    background-image: url(/img/stars.svg);
+    background-size: contain;
+    text-align: center;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+.bt-blue {
+    background-color: #7187D5;
+    color: #fff;
+    font-size: 18px;
+    padding: 14px 20px;
+    margin: 30px 0;
+}
+
 
 /* Footer */
 .footer-container {
-    height: 600px;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
 .footer-top {
     width: 60%;
     display: flex;
+    align-items: center;
+    padding: 30px 0;
 }
 
 .footer-big-content {
     width: 30%;
     height: 500px;
+    color: #fff;
 }
 
 .footer-content {
@@ -125,85 +200,66 @@
 }
 
 .footer-pulsanti {
-    width: 60%;
+    width: 80%;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.footer-pulsanti button {
-    padding: 2px;
+
+.footer-big-content h3{
+    margin-bottom: 20px;
+    color: #7187D5;
+}
+
+.footer-big-content i {
+    margin: 0 5px;
+}
+
+.ita-bandiera {
+    width: 20px;
+}
+
+.lingua {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.footer-content h4 {
+    color: #7187D5;
+    margin-bottom: 20px;
+}
+
+.footer-content li {
+    color: #fff;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+hr {
+    background-color:  #7187D5;
+    border: none;
+    height: 1px;
+    width: 80%;
+    margin: auto;
+}
+
+.pulsante-registrati {
+    background-color: #7187D5;
+    color: #fff;
 }
 
 
-
-
-
-
-/* Regole di Debug */
-
-.debug .header-top {
-    background-color: #ADD8E6;
-}
-
-.debug .container-header  {
-    background-color: #DAA521;
-    border: 2px dashed black;
-}
-
-.debug .header-bottom {
-    background-color: #00008B;
-}
-
-.debug .header-content {
-    background-color: #EE81EE;
-    border: 2px dashed black;
-}
-
-.debug .white-bg {
+.white-bg {
     background-color: #ffffff;
 }
 
-.debug .grey-bg {
+.grey-bg {
     background-color: #D3D3D3;
 }
 
-.debug .main-img {
-    background-color: #1D90FF;
-    border: 2px dashed black;
-}
 
-.debug .main-text {
-    background-color: #FFBFCB;
-    border: 2px dashed black;
-}
-
-.debug .big-content{
-    background-color: #238B21;
-    border: 2px dashed black;
-}
-
-.debug .footer-big-content {
-    background-color: #F08080;
-    border: 2px dashed black;
-}
-
-.debug .footer-content {
-    background-color: #20B2AA;
-    border: 1px dashed white;
-}
-
-.debug footer {
+footer {
     background-color: #23272A;
-}
-
-.debug .footer-pulsanti {
-    background-color: #20B2AA;
-}
-
-.debug .footer-pulsanti button {
-    background-color: #F08080;
-    border: 2px dashed black;
-
 }
