@@ -28,21 +28,9 @@ body {
     padding: 10px;
 }
 
-.login  {
-    display: flex;
-    align-items: center ;
-    justify-content: flex-end;
-}
-
-.navbar {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-}
 
 .navbar ul {
     display: flex;
-    justify-content: center;
 }
 
 .navbar ul li{
@@ -110,7 +98,6 @@ button {
 .container-main {
     display: flex;
     width: 80%;
-    justify-content: space-between;
 }
 
 .main-text h2 {
@@ -120,7 +107,6 @@ button {
 
 .main-text p {
     font-size: 18px;
-    text-align: left;
     line-height: 25px;
 }
 
@@ -129,9 +115,13 @@ button {
 }
 
 .big-content {
-    width: 80%;
     margin: auto;
     text-align: center;
+}
+
+.big-text-content {
+    width: 80%;
+    margin: auto;
 }
 
 .big-content h2{
@@ -146,13 +136,18 @@ button {
 }
 
 .big-content img{
-    width: 110%;
+    width: 100%;
 }
 
 .star-text {
     background-image: url(/img/stars.svg);
     background-size: contain;
-    text-align: center;
+    padding: 18px;
+}
+
+.star-container {
+    display: flex;
+    justify-content: center;
 }
 
 h3 {
@@ -177,33 +172,27 @@ h3 {
 .footer-top {
     width: 60%;
     display: flex;
-    align-items: center;
     padding: 30px 0;
 }
 
 .footer-big-content {
     width: 30%;
-    height: 500px;
     color: #fff;
 }
 
 .footer-content {
     width: calc(70% / 4);
-    height: 500px;
 }
 
 .footer-bottom {
-    height: 60px;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    margin-top: 15px;
 }
 
 .footer-pulsanti {
     width: 80%;
-    height: 50px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -248,6 +237,7 @@ hr {
 .pulsante-registrati {
     background-color: #7187D5;
     color: #fff;
+    font-size: 15px;
 }
 
 
