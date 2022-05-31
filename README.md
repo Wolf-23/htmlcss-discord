@@ -1,1 +1,6 @@
-# htmlcss-discord
+# Esercizio Boolean - Team Cards
+
+* Nome: htmlcss-discord
+* Autore: Lupinu Riccardo
+* Data: 31/05/2022
+* Linguaggio: HTML, CSS
