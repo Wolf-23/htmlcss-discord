@@ -1,4 +1,4 @@
-# Esercizio Boolean - Team Cards
+# Esercizio Boolean - Discord
 
 * Nome: htmlcss-discord
 * Autore: Lupinu Riccardo
